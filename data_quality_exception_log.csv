@@ -1,0 +1,69 @@
+row_index,student_id,name,department,severity,issues,tuition_paid,gpa,enrollment_date,advisor
+7,S00125,James Smith,NULL,Warning,Missing department,9494.02,1.84,2020-05-04,F021
+22,S00281,Jennifer Miller,NULL,Warning,Missing department,14457.84,3.15,2020-10-07,F020
+24,S00077,William Smith,CS,Warning,GPA out of range (0-4.5): -1.5,12456.97,-1.5,2020-03-17,F015
+26,S00499,William Johnson,NULL,Warning,Missing department,24765.51,2.69,2021-05-13,F019
+30,S00403,Michael Jones,NULL,Warning,Missing department,14564.68,2.45,2021-02-06,F016
+43,S00186,Mary Johnson,NULL,Warning,Missing department,11343.91,2.44,2020-07-04,F004
+48,S00417,Elizabeth Williams,NULL,Warning,Missing department,12295.96,3.57,2021-02-20,F039
+49,S00023,Elizabeth Brown,English,Critical,Future enrollment date: 2027-12-01,5815.08,3.75,2027-12-01,F021
+55,S00056,Patricia Brown,English,Critical,"Negative tuition: $-1,200.00",-1200.0,1.53,2020-02-25,F087
+75,S00305,John Rodriguez,NULL,Warning,Missing department,10297.91,2.28,2020-10-31,F053
+79,S00491,James Davis,NULL,Warning,Missing department,14909.04,3.77,2021-05-05,F006
+82,S00479,Robert Davis,NULL,Warning,Missing department,24124.44,3.47,2021-04-23,F093
+83,S00173,Robert Jones,NULL,Warning,Missing department,11362.23,2.01,2020-06-21,F091
+94,S00433,Elizabeth Garcia,NULL,Warning,Missing department,17361.03,2.21,2021-03-08,F019
+108,S00332,Michael Smith,NULL,Warning,Missing department,17699.2,1.81,2020-11-27,F061
+127,S00204,Jennifer Garcia,NULL,Warning,Missing department,20186.89,1.53,2020-07-22,F059
+134,S00141,Elizabeth Smith,NULL,Warning,Missing department,15644.9,2.72,2020-05-20,F079
+141,S00209,Elizabeth Johnson,NULL,Warning,Missing department,23284.73,2.19,2020-07-27,F042
+147,S00223,William Smith,NULL,Warning,Missing department,22934.29,3.43,2020-08-10,F068
+149,S00431,Patricia Davis,NULL,Warning,Missing department,8555.33,1.62,2021-03-06,F013
+168,S00455,Linda Brown,NULL,Warning,Missing department,16642.96,2.05,2021-03-30,F053
+175,S00176,James Williams,NULL,Warning,Missing department,20048.56,1.91,2020-06-24,F038
+179,S00371,Patricia Brown,NULL,Warning,Missing department,16491.75,3.52,2021-01-05,F037
+203,S00166,James Jones,NULL,Warning,Missing department,23817.51,2.74,2020-06-14,F074
+208,S00480,William Jones,NULL,Warning,Missing department,7662.9,3.93,2021-04-24,F026
+210,S00251,Linda Jones,History,Critical,Invalid advisor ID: F9999,23355.05,2.07,2020-09-07,F9999
+214,S00256,John Garcia,NULL,Warning,Missing department,15529.98,3.03,2020-09-12,F086
+235,S00347,John Jones,NULL,Warning,Missing department,20372.0,2.24,2020-12-12,F076
+238,S00151,John Smith,CS,Critical,Invalid advisor ID: XYZ99,9691.23,2.02,2020-05-30,XYZ99
+239,S00178,Mary Smith,NULL,Warning,Missing department,10773.71,2.96,2020-06-26,F069
+240,S00395,Elizabeth Rodriguez,NULL,Warning,Missing department,7783.96,3.52,2021-01-29,F060
+243,S00011,Patricia Williams,Math,Critical,Negative tuition: $-500.00,-500.0,3.98,2020-01-11,F085
+246,S00082,William Davis,NULL,Warning,Missing department,6947.87,2.53,2020-03-22,F029
+247,S00039,Mary Martinez,NULL,Warning,Missing department,18065.26,2.72,2020-02-08,F040
+253,S00199,Mary Johnson,NULL,Warning,Missing department,13888.39,2.06,2020-07-17,F064
+263,S00097,William Johnson,NULL,Warning,Missing department,9693.48,2.19,2020-04-06,F070
+286,S00290,James Johnson,NULL,Warning,Missing department,6169.09,2.36,2020-10-16,F052
+287,S00456,Elizabeth Smith,NULL,Warning,Missing department,18619.5,2.72,2021-03-31,F024
+294,S00113,Robert Martinez,NULL,Warning,Missing department,20635.81,3.37,2020-04-22,F045
+309,S00121,Elizabeth Brown,CS,Warning,GPA out of range (0-4.5): 4.8,7459.42,4.8,2020-04-30,F023
+315,S00286,Linda Williams,NULL,Warning,Missing department,9123.72,3.38,2020-10-12,F017
+321,S00365,Robert Jones,NULL,Warning,Missing department,21505.72,3.35,2020-12-30,F065
+332,S00036,Robert Johnson,NULL,Warning,Missing department,5873.23,1.81,2020-02-05,F046
+337,S00343,Patricia Miller,NULL,Warning,Missing department,7396.58,2.02,2020-12-08,F042
+352,S00005,Michael Rodriguez,NULL,Warning,Missing department,24031.0,3.51,2020-01-05,F008
+355,S00101,Mary Jones,NULL,Warning,Missing department,13975.55,2.28,2020-04-10,F038
+362,S00293,Patricia Williams,NULL,Warning,Missing department,16940.94,3.5,2020-10-19,F055
+363,S00216,James Martinez,NULL,Warning,Missing department,12887.31,1.89,2020-08-03,F029
+366,S00033,Robert Jones,NULL,Warning,Missing department,19885.58,2.7,2020-02-02,F019
+369,S00201,Jennifer Miller,Math,Critical,Invalid advisor ID: F12,16741.23,2.5,2020-07-19,F12
+381,S00129,Michael Garcia,NULL,Warning,Missing department,16693.41,1.57,2020-05-08,F099
+388,S00015,Jennifer Williams,NULL,Warning,Missing department,20668.45,2.39,2020-01-15,F054
+406,S00470,William Jones,NULL,Warning,Missing department,7984.76,1.91,2021-04-14,F034
+417,S00260,Mary Martinez,NULL,Warning,Missing department,15303.5,1.85,2020-09-16,F085
+424,S00050,Linda Jones,NULL,Warning,Missing department,24215.61,2.47,2020-02-19,F092
+428,S00035,Michael Miller,History,Warning,GPA out of range (0-4.5): 5.2,13673.11,5.2,2020-02-04,F077
+430,S00428,Robert Davis,NULL,Warning,Missing department,6492.6,1.8,2021-03-03,F017
+433,S00340,Elizabeth Davis,NULL,Warning,Missing department,24624.73,1.73,2020-12-05,F067
+434,S00475,Mary Brown,NULL,Warning,Missing department,21213.72,3.1,2021-04-19,F049
+440,S00316,Elizabeth Johnson,NULL,Warning,Missing department,17803.36,1.92,2020-11-11,F073
+441,S00089,Linda Garcia,History,Critical,Future enrollment date: 2028-05-15,11242.96,2.94,2028-05-15,F014
+475,S00294,John Williams,NULL,Warning,Missing department,18516.82,2.43,2020-10-20,F075
+483,S00360,James Rodriguez,NULL,Warning,Missing department,11833.49,1.78,2020-12-25,F026
+484,S00100,Linda Smith,NULL,Warning,Missing department,11617.79,3.14,2020-04-09,F093
+489,S00215,William Miller,NULL,Warning,Missing department,14533.91,2.17,2020-08-02,F073
+387,S00301,Robert Smith,Math,Warning,"Extreme tuition outlier (>3 std devs): $950,000.00",950000.0,1.74,2020-10-27,F075
+421,S00002,Patricia Smith,CS,Warning,Duplicate student ID (shared with 1 others),21428.81,1.6,2020-01-02,F049
+492,S00002,Patricia Smith,CS,Warning,Duplicate student ID (shared with 1 others),21428.81,1.6,2020-01-02,F049

@@ -1,0 +1,834 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Data Quality Exception Memo</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 40px; background: #f8f9fa; }
+        .memo-box { max-width: 1100px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; border-bottom: 3px solid #b31b1b; padding-bottom: 10px; }
+        .header-info { background: #f1f3f5; padding: 15px; border-radius: 5px; margin: 20px 0; }
+        .summary { display: flex; gap: 30px; margin: 25px 0; }
+        .summary-box { flex: 1; padding: 15px; border-radius: 5px; text-align: center; font-weight: bold; }
+        .critical-box { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+        .warning-box { background: #fff3cd; color: #856404; border: 1px solid #ffc107; }
+        .escalate-note { background: #cce5ff; padding: 15px; border-left: 5px solid #004085; margin: 20px 0; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px; }
+        th { background: #2c3e50; color: white; padding: 10px; text-align: left; }
+        td { padding: 10px; border-bottom: 1px solid #dee2e6; }
+        .tag-critical { background: #dc3545; color: white; padding: 3px 8px; border-radius: 12px; font-size: 12px; font-weight: bold; }
+        .tag-warning { background: #ffc107; color: #212529; padding: 3px 8px; border-radius: 12px; font-size: 12px; font-weight: bold; }
+        .footer { margin-top: 30px; font-size: 13px; color: #6c757d; border-top: 1px solid #dee2e6; padding-top: 15px; }
+        .action-needed { background: #fcf8e3; padding: 10px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+<div class="memo-box">
+    <h1> Data Quality Exception Memo</h1>
+    <div class="header-info">
+        <strong>To:</strong> Senior Team, Institutional Reporting<br>
+        <strong>From:</strong> Junior Data Analyst (Portfolio Project)<br>
+        <strong>Date:</strong> September 02, 2026<br>
+        <strong>Subject:</strong> Critical Data Discrepancies Identified in Monthly Extract
+    </div>
+
+    <div class="escalate-note">
+        <strong> Executive Summary:</strong> 
+        During routine validation of the 501-record dataset, I identified <strong>68 total exceptions</strong>. 
+        <strong>7 Critical</strong> issues require immediate escalation and <strong>61 Warnings</strong> require investigative follow-up.
+    </div>
+
+    <div class="summary">
+        <div class="summary-box critical-box">
+             CRITICAL (Escalate): 7
+        </div>
+        <div class="summary-box warning-box">
+             WARNINGS (Investigate): 61
+        </div>
+    </div>
+
+    <h3>Full Exception List</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Severity</th>
+                <th>Student ID</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Issues</th>
+                <th>Tuition</th>
+                <th>GPA</th>
+                <th>Enroll Date</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00125</td>
+            <td>James Smith</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$9,494.02</td>
+            <td>1.84</td>
+            <td>2020-05-04</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00281</td>
+            <td>Jennifer Miller</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$14,457.84</td>
+            <td>3.15</td>
+            <td>2020-10-07</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00077</td>
+            <td>William Smith</td>
+            <td>CS</td>
+            <td style="max-width: 250px;">GPA out of range (0-4.5): -1.5</td>
+            <td>$12,456.97</td>
+            <td>-1.50</td>
+            <td>2020-03-17</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00499</td>
+            <td>William Johnson</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$24,765.51</td>
+            <td>2.69</td>
+            <td>2021-05-13</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00403</td>
+            <td>Michael Jones</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$14,564.68</td>
+            <td>2.45</td>
+            <td>2021-02-06</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00186</td>
+            <td>Mary Johnson</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$11,343.91</td>
+            <td>2.44</td>
+            <td>2020-07-04</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00417</td>
+            <td>Elizabeth Williams</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$12,295.96</td>
+            <td>3.57</td>
+            <td>2021-02-20</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-critical">CRITICAL</span></td>
+            <td>S00023</td>
+            <td>Elizabeth Brown</td>
+            <td>English</td>
+            <td style="max-width: 250px;">Future enrollment date: 2027-12-01</td>
+            <td>$5,815.08</td>
+            <td>3.75</td>
+            <td>2027-12-01</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-critical">CRITICAL</span></td>
+            <td>S00056</td>
+            <td>Patricia Brown</td>
+            <td>English</td>
+            <td style="max-width: 250px;">Negative tuition: $-1,200.00</td>
+            <td>$-1,200.00</td>
+            <td>1.53</td>
+            <td>2020-02-25</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00305</td>
+            <td>John Rodriguez</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$10,297.91</td>
+            <td>2.28</td>
+            <td>2020-10-31</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00491</td>
+            <td>James Davis</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$14,909.04</td>
+            <td>3.77</td>
+            <td>2021-05-05</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00479</td>
+            <td>Robert Davis</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$24,124.44</td>
+            <td>3.47</td>
+            <td>2021-04-23</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00173</td>
+            <td>Robert Jones</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$11,362.23</td>
+            <td>2.01</td>
+            <td>2020-06-21</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00433</td>
+            <td>Elizabeth Garcia</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$17,361.03</td>
+            <td>2.21</td>
+            <td>2021-03-08</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00332</td>
+            <td>Michael Smith</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$17,699.20</td>
+            <td>1.81</td>
+            <td>2020-11-27</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00204</td>
+            <td>Jennifer Garcia</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$20,186.89</td>
+            <td>1.53</td>
+            <td>2020-07-22</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00141</td>
+            <td>Elizabeth Smith</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$15,644.90</td>
+            <td>2.72</td>
+            <td>2020-05-20</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00209</td>
+            <td>Elizabeth Johnson</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$23,284.73</td>
+            <td>2.19</td>
+            <td>2020-07-27</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00223</td>
+            <td>William Smith</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$22,934.29</td>
+            <td>3.43</td>
+            <td>2020-08-10</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00431</td>
+            <td>Patricia Davis</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$8,555.33</td>
+            <td>1.62</td>
+            <td>2021-03-06</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00455</td>
+            <td>Linda Brown</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$16,642.96</td>
+            <td>2.05</td>
+            <td>2021-03-30</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00176</td>
+            <td>James Williams</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$20,048.56</td>
+            <td>1.91</td>
+            <td>2020-06-24</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00371</td>
+            <td>Patricia Brown</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$16,491.75</td>
+            <td>3.52</td>
+            <td>2021-01-05</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00166</td>
+            <td>James Jones</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$23,817.51</td>
+            <td>2.74</td>
+            <td>2020-06-14</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00480</td>
+            <td>William Jones</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$7,662.90</td>
+            <td>3.93</td>
+            <td>2021-04-24</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-critical">CRITICAL</span></td>
+            <td>S00251</td>
+            <td>Linda Jones</td>
+            <td>History</td>
+            <td style="max-width: 250px;">Invalid advisor ID: F9999</td>
+            <td>$23,355.05</td>
+            <td>2.07</td>
+            <td>2020-09-07</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00256</td>
+            <td>John Garcia</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$15,529.98</td>
+            <td>3.03</td>
+            <td>2020-09-12</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00347</td>
+            <td>John Jones</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$20,372.00</td>
+            <td>2.24</td>
+            <td>2020-12-12</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-critical">CRITICAL</span></td>
+            <td>S00151</td>
+            <td>John Smith</td>
+            <td>CS</td>
+            <td style="max-width: 250px;">Invalid advisor ID: XYZ99</td>
+            <td>$9,691.23</td>
+            <td>2.02</td>
+            <td>2020-05-30</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00178</td>
+            <td>Mary Smith</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$10,773.71</td>
+            <td>2.96</td>
+            <td>2020-06-26</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00395</td>
+            <td>Elizabeth Rodriguez</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$7,783.96</td>
+            <td>3.52</td>
+            <td>2021-01-29</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-critical">CRITICAL</span></td>
+            <td>S00011</td>
+            <td>Patricia Williams</td>
+            <td>Math</td>
+            <td style="max-width: 250px;">Negative tuition: $-500.00</td>
+            <td>$-500.00</td>
+            <td>3.98</td>
+            <td>2020-01-11</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00082</td>
+            <td>William Davis</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$6,947.87</td>
+            <td>2.53</td>
+            <td>2020-03-22</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00039</td>
+            <td>Mary Martinez</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$18,065.26</td>
+            <td>2.72</td>
+            <td>2020-02-08</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00199</td>
+            <td>Mary Johnson</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$13,888.39</td>
+            <td>2.06</td>
+            <td>2020-07-17</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00097</td>
+            <td>William Johnson</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$9,693.48</td>
+            <td>2.19</td>
+            <td>2020-04-06</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00290</td>
+            <td>James Johnson</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$6,169.09</td>
+            <td>2.36</td>
+            <td>2020-10-16</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00456</td>
+            <td>Elizabeth Smith</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$18,619.50</td>
+            <td>2.72</td>
+            <td>2021-03-31</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00113</td>
+            <td>Robert Martinez</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$20,635.81</td>
+            <td>3.37</td>
+            <td>2020-04-22</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00121</td>
+            <td>Elizabeth Brown</td>
+            <td>CS</td>
+            <td style="max-width: 250px;">GPA out of range (0-4.5): 4.8</td>
+            <td>$7,459.42</td>
+            <td>4.80</td>
+            <td>2020-04-30</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00286</td>
+            <td>Linda Williams</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$9,123.72</td>
+            <td>3.38</td>
+            <td>2020-10-12</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00365</td>
+            <td>Robert Jones</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$21,505.72</td>
+            <td>3.35</td>
+            <td>2020-12-30</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00036</td>
+            <td>Robert Johnson</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$5,873.23</td>
+            <td>1.81</td>
+            <td>2020-02-05</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00343</td>
+            <td>Patricia Miller</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$7,396.58</td>
+            <td>2.02</td>
+            <td>2020-12-08</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00005</td>
+            <td>Michael Rodriguez</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$24,031.00</td>
+            <td>3.51</td>
+            <td>2020-01-05</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00101</td>
+            <td>Mary Jones</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$13,975.55</td>
+            <td>2.28</td>
+            <td>2020-04-10</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00293</td>
+            <td>Patricia Williams</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$16,940.94</td>
+            <td>3.50</td>
+            <td>2020-10-19</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00216</td>
+            <td>James Martinez</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$12,887.31</td>
+            <td>1.89</td>
+            <td>2020-08-03</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00033</td>
+            <td>Robert Jones</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$19,885.58</td>
+            <td>2.70</td>
+            <td>2020-02-02</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-critical">CRITICAL</span></td>
+            <td>S00201</td>
+            <td>Jennifer Miller</td>
+            <td>Math</td>
+            <td style="max-width: 250px;">Invalid advisor ID: F12</td>
+            <td>$16,741.23</td>
+            <td>2.50</td>
+            <td>2020-07-19</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00129</td>
+            <td>Michael Garcia</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$16,693.41</td>
+            <td>1.57</td>
+            <td>2020-05-08</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00015</td>
+            <td>Jennifer Williams</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$20,668.45</td>
+            <td>2.39</td>
+            <td>2020-01-15</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00470</td>
+            <td>William Jones</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$7,984.76</td>
+            <td>1.91</td>
+            <td>2021-04-14</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00260</td>
+            <td>Mary Martinez</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$15,303.50</td>
+            <td>1.85</td>
+            <td>2020-09-16</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00050</td>
+            <td>Linda Jones</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$24,215.61</td>
+            <td>2.47</td>
+            <td>2020-02-19</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00035</td>
+            <td>Michael Miller</td>
+            <td>History</td>
+            <td style="max-width: 250px;">GPA out of range (0-4.5): 5.2</td>
+            <td>$13,673.11</td>
+            <td>5.20</td>
+            <td>2020-02-04</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00428</td>
+            <td>Robert Davis</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$6,492.60</td>
+            <td>1.80</td>
+            <td>2021-03-03</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00340</td>
+            <td>Elizabeth Davis</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$24,624.73</td>
+            <td>1.73</td>
+            <td>2020-12-05</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00475</td>
+            <td>Mary Brown</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$21,213.72</td>
+            <td>3.10</td>
+            <td>2021-04-19</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00316</td>
+            <td>Elizabeth Johnson</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$17,803.36</td>
+            <td>1.92</td>
+            <td>2020-11-11</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-critical">CRITICAL</span></td>
+            <td>S00089</td>
+            <td>Linda Garcia</td>
+            <td>History</td>
+            <td style="max-width: 250px;">Future enrollment date: 2028-05-15</td>
+            <td>$11,242.96</td>
+            <td>2.94</td>
+            <td>2028-05-15</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00294</td>
+            <td>John Williams</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$18,516.82</td>
+            <td>2.43</td>
+            <td>2020-10-20</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00360</td>
+            <td>James Rodriguez</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$11,833.49</td>
+            <td>1.78</td>
+            <td>2020-12-25</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00100</td>
+            <td>Linda Smith</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$11,617.79</td>
+            <td>3.14</td>
+            <td>2020-04-09</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00215</td>
+            <td>William Miller</td>
+            <td>NULL</td>
+            <td style="max-width: 250px;">Missing department</td>
+            <td>$14,533.91</td>
+            <td>2.17</td>
+            <td>2020-08-02</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00301</td>
+            <td>Robert Smith</td>
+            <td>Math</td>
+            <td style="max-width: 250px;">Extreme tuition outlier (>3 std devs): $950,000.00</td>
+            <td>$950,000.00</td>
+            <td>1.74</td>
+            <td>2020-10-27</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00002</td>
+            <td>Patricia Smith</td>
+            <td>CS</td>
+            <td style="max-width: 250px;">Duplicate student ID (shared with 1 others)</td>
+            <td>$21,428.81</td>
+            <td>1.60</td>
+            <td>2020-01-02</td>
+        </tr>
+    
+        <tr>
+            <td><span class="tag-warning">WARNING</span></td>
+            <td>S00002</td>
+            <td>Patricia Smith</td>
+            <td>CS</td>
+            <td style="max-width: 250px;">Duplicate student ID (shared with 1 others)</td>
+            <td>$21,428.81</td>
+            <td>1.60</td>
+            <td>2020-01-02</td>
+        </tr>
+    
+        </tbody>
+    </table>
+
+    <div class="action-needed">
+        <strong> Recommended Next Steps:</strong>
+        <ul>
+            <li><strong>Critical (Escalate):</strong> Review rows with negative tuition, future dates, and invalid advisor IDs. These will break downstream financial aid and federal reporting.</li>
+            <li><strong>Warnings (Investigate):</strong> Reach out to department admin for missing department codes. Verify GPA outliers with Registrar's office.</li>
+            <li><strong>Duplicate IDs:</strong> Confirm with IT whether these are system replication errors or true duplicates.</li>
+        </ul>
+        <p style="margin-top:10px;"><em>I have saved the detailed CSV log for your reference. I can assist in correcting the Warning-level issues, but Critical items require your approval before we proceed with final reporting.</em></p>
+    </div>
+
+    <div class="footer">
+        This is an automated exception report generated by the Data Quality Audit script. 
+        For full details, see <code>data_quality_exception_log.csv</code>.
+    </div>
+</div>
+</body>
+</html>
